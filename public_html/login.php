@@ -29,7 +29,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">SGH</a>
+      <a class="navbar-brand" href="index.php">SGH</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,37 +37,45 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         	<li class="nav-item">
-            	<a class="nav-link" href="index.html">Home</a>
-          	</li>
-
-          	<li class="nav-item active">
-            	<a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+            	<a class="nav-link" href="index.php">Home</a>
           	</li>
 
           	<li class="nav-item">
-            	<a class="nav-link" href="locations.html">Locations</a>
+            	<a class="nav-link" href="about.php">About</a>
+          	</li>
+
+          	<li class="nav-item">
+            	<a class="nav-link" href="locations.php">Locations</a>
           	</li>
         </ul>
 
-        <a class="btn btn-secondary" href="login.html">Login</a>
-          &nbsp;<a class="btn btn-secondary" href="signup.html">Sign-Up</a>
+		    <a class="btn btn-primary" href="login.php">Login</a>
+        &nbsp;<a class="btn btn-secondary" href="signup.php">Sign-Up</a>
       </div>
     </nav>
 
     <!-- Main content -->
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid" style="margin-top: 10%;">
-          <div class="container">
-            <h1 class="display-4">Simpson Ghost Hunters</h1>
-            <p class="lead">The Simpson Ghost Hunters investigate haunted locations and paranormal activity around the Simpson College campus. These experiences are real and can be backed up with witnesses and evidence. Our hunters have spent hours on lockdown inside these locations and are trained to defend themselves from the paranormal. Due to the unpredictable nature of these anomalous creatures, we highly advise that you never try this alone.</p>
-            
-<a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
-            
-          </div>
+    <div class="container col-md-4 col-8" style="margin-top: 10%;">
+      <h1>Login</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="exampleInputEmail1" placeholder="Enter email">
         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember password</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
     </div>
 
-    <footer class="container">
+    <footer class="container col-4">
       <p>&copy; Simpson Ghost Hunters 2017-2018</p>
     </footer>
 
